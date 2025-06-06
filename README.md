@@ -23,9 +23,6 @@ python main.py init_db
 python main.py add pika_eng.json
 python main.py
 ```
-The app will now be available at [http://localhost:5000](http://localhost:5000).
-
-### Access the test
 The test should now be accessible: [http://localhost:5000/enter/pika](http://localhost:5000/enter/pika).
 
 ---
