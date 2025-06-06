@@ -23,10 +23,10 @@ python main.py init_db
 python main.py add pika_eng.json
 python main.py
 ```
-This will run the survey on `[http://127.0.0.1:5000](http://127.0.0.1:5000)`/`[http://localhost:5000](http://localhost:5000)`.
+This will run the survey on [http://127.0.0.1:5000](http://127.0.0.1:5000)/[http://localhost:5000](http://localhost:5000).
 
 ### Access the test
-Now the test should be running here: `[http://localhost:5000/enter/pika](http://localhost:5000/enter/pika)`.
+Now the test should be running here: [http://localhost:5000/enter/pika](http://localhost:5000/enter/pika).
 
 ---
 
