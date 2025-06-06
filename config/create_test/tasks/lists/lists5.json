@@ -1,0 +1,28 @@
+{
+	"lists5a": {
+		"caption": "Which values does list <code>a</code> have after line 4?<br></br><small>Write each value with a comma between, like this: <code>1, 2, 3</code></small>",
+		"type": "options",
+		"options": [
+            "Values of list a:",
+            "I don't know"
+        ],
+		"keys": [
+            "list:",
+            "unknown"
+        ],
+		"correct": "list:10,20,30"
+	},
+	"lists5b": {
+		"caption": "Which values does list <code>b</code> have after line 4?<br></br><small>Write each value with a comma between, like this: <code>1, 2, 3</code></small>",
+		"type": "options",
+		"options": [
+            "Values of list b:",
+            "I don't know"
+        ],
+		"keys": [
+            "list:",
+            "unknown"
+        ],
+		"correct": "list:5,35,25"
+	}
+}

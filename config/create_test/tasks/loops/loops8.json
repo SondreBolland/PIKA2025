@@ -1,0 +1,15 @@
+{
+	"loops8": {
+		"caption": "What does this program print?",
+		"type": "multi_line_text",
+		"options": [
+            "It prints:",
+            "I don't know"
+        ],
+		"keys": [
+            "integer:",
+            "unknown"
+        ],
+		"correct": "1112"
+	}
+}

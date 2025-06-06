@@ -1,0 +1,30 @@
+{
+    "functions6a": {
+        "caption": "What is the value of variable <strong>a</strong> when it is printed on line 8?",
+        "type": "options",
+        "options": [
+            "Its value is:",
+            "I don't know"
+        ],
+        "keys": [
+            "integer:",
+            "error",
+            "unknown"
+        ],
+        "correct": "integer:10"
+    },
+    "functions6b": {
+        "caption": "What is the value of variable <strong>b</strong> when it is printed on line 9?",
+        "type": "options",
+        "options": [
+            "Its value is:",
+            "I don't know"
+        ],
+        "keys": [
+            "integer:",
+            "error",
+            "unknown"
+        ],
+        "correct": "integer:10"
+    }
+}

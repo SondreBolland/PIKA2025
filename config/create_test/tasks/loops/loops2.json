@@ -1,0 +1,16 @@
+{
+    "loops2": {
+        "caption": "What does this program print?",
+        "type": "options",
+        "options": [
+            "It prints:",
+            "I don't know"
+        ],
+        "keys": [
+            "integer:",
+            "error",
+            "unknown"
+        ],
+        "correct": "integer:100"
+    }
+}

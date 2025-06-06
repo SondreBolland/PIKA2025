@@ -1,0 +1,23 @@
+{
+	"loops6": {
+		"caption": "Which solution to a problem is <b>NOT</b> best suited for a for-loop?",
+		"type": "options",
+		"options": [
+            "A solution that needs to print all the values in a list at the end.",
+            "A solution that needs to repeat a known number of times.",
+			"A solution that involves counting a range of numbers.",
+			"A solution that involves performing the same operation to different objects in a list.",
+			"A solution that requires looping until a certain condition is met.",
+			"I don't know"
+        ],
+		"keys": [
+            "I",
+            "II",
+			"III",
+			"IV",
+			"V",
+			"unknown"
+        ],
+		"correct": "V"
+	}
+}

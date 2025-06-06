@@ -1,0 +1,23 @@
+{
+    "functions3": {
+      "caption": "Which of the following statements best describes the execution of the function call <code>add(8, 5, 12)</code>",
+      "type": "options",
+      "options": [
+        "Value of max = 13",
+        "After printing the max product, add will return the max",
+        "Nothing will ever be returned from this function",
+        "Nothing will ever be printed from this function",
+        "An error will be generated for attempting to print after returning max",
+        "I don't know"
+      ],
+      "keys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "unknown"
+      ],
+      "correct": "d"
+    }
+}

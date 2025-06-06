@@ -1,0 +1,15 @@
+{
+    "expressions5": {
+        "caption": "What does this program print?",
+        "type": "options",
+        "options": [
+            "It prints:",
+            "I don't know"
+        ],
+        "keys": [
+            "str:",
+            "unknown"
+        ],
+        "correct": "str:111"
+    }
+}

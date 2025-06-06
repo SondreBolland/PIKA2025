@@ -1,0 +1,21 @@
+{
+    "conditionals2": {
+      "caption": "What does this program print?",
+      "type": "options",
+      "options": [
+        "1",
+        "2",
+        "1 and 2",
+        "Nothing",
+        "I don't know"
+      ],
+      "keys": [
+        "1",
+        "2",
+        "1and2",
+        "nothing",
+        "-"
+      ],
+      "correct": "2"
+    }
+}

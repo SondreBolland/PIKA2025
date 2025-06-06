@@ -1,0 +1,15 @@
+{
+    "lists4": {
+        "caption": "What does this program print?",
+        "type": "options",
+        "options": [
+            "It prints:",
+            "I don't know"
+        ],
+        "keys": [
+            "integer:",
+            "unknown"
+        ],
+        "correct": "integer:25"
+    }
+}

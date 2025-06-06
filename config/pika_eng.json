@@ -1,0 +1,676 @@
+{
+  "name": "pika",
+  "title": "How much programming do you know?",
+  "open": true,
+  "email_subject": "PIKA: Prior Informatics Knowledge Assessment",
+  "email_intro": "...",
+  "introduction": "<b>PIKA: Prior Informatics Knowledge Assessment 2025</b><br></br>This test is a survey of the programming knowledge that students have when they begin higher education. The results of this test will be used to improve the teaching of programming.<br/><br/>The test is <b>not</b> used to evaluate you and will not affect your grade in the course. Your answers to the test questions are <b>anonymous</b> and we will not store any identifier such as your name or student number. Participation is voluntary.<br></br>The <b>Introduction to Programming</b> course you are about to start will be taught from scratch, regardless of how well you do on this test :)",
+  "thanks": "Thank you for responding! If you want to see your score later you can bookmark this.",
+  "next": "Next",
+  "pick_one": "Choose one option",
+  "textplaceholder": "Your answer",
+  "valueplaceholder": "Value",
+  "results": {
+    "type": "summary",
+    "text": "You answered {score} out of {max} questions!",
+    "show_correct": false,
+    "question": "Question",
+    "your_ans": "Your answer",
+    "correct_ans": "Correct answer",
+    "next": "Next",
+    "prev": "Previous"
+  },
+  "questions_text": "If you have any questions, please contact ",
+  "questions_or": " or ",
+  "owners": [
+    {
+      "name": "Sondre Sæther Bolland",
+      "email": "sondre.bolland@uib.no"
+    }
+  ],
+  "value_types": {
+    "integer": {
+      "key": 0,
+      "name": "Integer (int)",
+      "validate": "[0-9]+",
+      "remove": " ",
+      "format": "{}",
+      "hint": "Example: 100"
+    },
+    "bool": {
+      "key": 1,
+      "name": "Boolean (bool)",
+      "validate": "(true|false)",
+      "remove": " ",
+      "format": "{}",
+      "hint": "Example: true or false"
+    },
+    "float": {
+      "key": 2,
+      "name": "Float (float)",
+      "validate": "[0-9]+.?[0-9]*",
+      "remove": " ",
+      "format": "{}",
+      "hint": "Example: 1.0"
+    },
+    "list": {
+      "key": 3,
+      "name": "List (list)",
+      "validate": " *\\[? *([0-9]+( *, *[0-9]+)*)? *\\]? *",
+      "remove": "[ \\[\\]]",
+      "format": "[{}]",
+      "hint": "Example: 1, 2 or [1, 2]"
+    },
+    "string": {
+      "key": 4,
+      "name": "String (str)",
+      "validate": "(\".*\"|'.*'|[^\"']*)",
+      "remove": "(^\"|^'|\"$|'$)",
+      "format": "\"{}\"",
+      "hint": "Example: \"abc\", 'abc' or abc"
+    },
+    "error": {
+      "key": 5,
+      "name": "An error will occur when running",
+      "validate": "",
+      "remove": null,
+      "format": "Runtime error",
+      "hint": "No value is needed"
+    },
+    "unknown": {
+      "key": 6,
+      "name": "I don't know",
+      "validate": "",
+      "remove": null,
+      "skipped": true,
+      "format": "I don't know",
+      "hint": "No value is needed"
+    }
+  },
+  "errors": {
+    "options": "Choose one option",
+    "number": "Write a number",
+    "text": "The field cannot be empty",
+    "no_value": "Choose a type for the value",
+    "value": {
+      "array": "Fill in a list av integers seperated by commas. For example: 1, 2, 3",
+      "integer": "Fill in an integer",
+      "string": "Fill in a string, either with or without quotation marks.",
+      "dict": "Fill in a dictionary in the given format.",
+      "null": "Fältet måste vara tomt eftersom du har valt None som typ",
+      "unknown": "The field must be empty as you have chosen \"I don't know\"",
+      "nothing": "Fältet måste vara tomt eftersom du har valt att variabeln inte finns"
+    }
+  },
+  "questions": {
+    "guidelines": {
+      "caption": "",
+      "type": "plain-text",
+      "text": "This test must be completed without the use of aids. Communication with others and the use of external resources such as the internet, books, printouts, etc. are not permitted.<br></br>The only tools allowed are pen and paper."
+    },
+    "own_work_declaration": {
+      "caption": "<b>I agree to follow the guidelines.</b>",
+      "type": "options",
+      "options": [
+        "I agree"
+      ],
+      "keys": [
+        "agree"
+      ]
+    },
+    "institution": {
+      "caption": "At what institution are you currently studying?",
+      "type": "options-list",
+      "options": [
+        "University of Bergen (UiB)",
+        "University of Oslo (UiO)",
+        "Norwegian University of Science and Technology (NTNU)",
+        "Norwegian University of Life Sciences (NMBU)",
+        "Østfold University College (HIOF)",
+        "Western Norway University of Applied Sciences (HVL)",
+        "University of Stavanger (UiS)",
+        "Linköping Unviversity (LiU)",
+        "Kristiania University College"
+      ],
+      "keys": [
+        "UiB",
+        "UiO",
+        "NTNU",
+        "NMBU",
+        "HIOF",
+        "HVL",
+        "UiS",
+        "LiU",
+        "Kristiania"
+      ]
+    },
+    "study_field": {
+      "caption": "What are you studying?",
+      "type": "options-list",
+      "options": [
+        "Informatics / Computer Science",
+        "Mathematics / Statistics",
+        "Physics",
+        "Chemistry",
+        "Biology / Life Sciences",
+        "Engineering (e.g., Electrical, Mechanical, Civil)",
+        "Medicine / Health Sciences",
+        "Earth Sciences / Geology",
+        "Environmental Sciences",
+        "Other"
+      ],
+      "keys": [
+        "inf",
+        "math",
+        "phys",
+        "chem",
+        "bio",
+        "eng",
+        "med",
+        "geo",
+        "env",
+        "other"
+      ]
+    },
+    "gender": {
+      "caption": "What gender do you identify as?",
+      "type": "text"
+    },
+    "prev_done": {
+      "caption": "When did you finish secondary school (high school)?",
+      "type": "options-list",
+      "options": [
+        "2024",
+        "2023",
+        "2022",
+        "2021",
+        "2020",
+        "2019",
+        "2018",
+        "2017",
+        "2016",
+        "2015",
+        "2014",
+        "2013",
+        "2012",
+        "2010",
+        "2009",
+        "2008",
+        "2007",
+        "2006",
+        "2005",
+        "2004",
+        "2003",
+        "2002",
+        "2001",
+        "2000",
+        "Earlier"
+      ],
+      "keys": [
+        "2024",
+        "2023",
+        "2022",
+        "2021",
+        "2020",
+        "2019",
+        "2018",
+        "2017",
+        "2016",
+        "2015",
+        "2014",
+        "2013",
+        "2012",
+        "2010",
+        "2009",
+        "2008",
+        "2007",
+        "2006",
+        "2005",
+        "2004",
+        "2003",
+        "2002",
+        "2001",
+        "2000",
+        "earlier"
+      ]
+    },
+    "math_courses": {
+      "caption": "What math subjects did you complete in secondary school (high school)?",
+      "type": "options-multi",
+      "options": [
+        "1P",
+        "1T",
+        "2P",
+        "S1",
+        "S2",
+        "R1",
+        "R2",
+        "Other"
+      ],
+      "keys": [
+        "1P",
+        "1T",
+        "2P",
+        "S1",
+        "S2",
+        "R1",
+        "R2",
+        "Other"
+      ]
+    },
+    "stem_courses": {
+      "caption": "What STEM subjects did you complete in secondary school (high school)?",
+      "type": "options-multi",
+      "options": [
+        "Biologi 1",
+        "Biologi 2",
+        "Fysikk 1",
+        "Fysikk 2",
+        "Kjemi 1",
+        "Kjemi 2",
+        "Geofag 1",
+        "Geofag 2",
+        "Teknologi og forskningslære 1",
+        "Teknologi og forskningslære 2",
+        "None of these subjects"
+      ],
+      "keys": [
+        "bio1",
+        "bio2",
+        "2P",
+        "fys1",
+        "fys2",
+        "kjemi1",
+        "kjemi2",
+        "geo1",
+        "geo2",
+        "tof1",
+        "tof2",
+        "none"
+      ]
+    },
+    "prog_courses": {
+      "caption": "Have you completed any of the following elective programming subjects?",
+      "type": "options-multi",
+      "options": [
+        "Informasjonsteknologi 1",
+        "Informasjonsteknologi 2",
+        "Programmering og Modellering X",
+        "Non of these subjects"
+      ],
+      "keys": [
+        "it1",
+        "it2",
+        "pmx",
+        "none"
+      ]
+    },
+    "other_experience": {
+      "caption": "Do you have experience with programming outside of school?",
+      "text": "Block based programming includes Scratch, Blockly, etc.<br/>Text based programming includes Python, Java, C, C#, C++, etc.",
+      "type": "options-multi",
+      "options": [
+        "I have no experience outside of school",
+        "At least 30 hours experience with text based programming",
+        "At least 50 hours experience with text based programming",
+        "At least 100 hours experience with text based programming",
+        "More than 120 hours experience with text based programming",
+        "At least 30 hours experience with block based programming",
+        "At least 50 hours experience with block based programming",
+        "At least 100 hours experience with block based programming",
+        "More than 120 hours experience with block based programming",
+        "Other experience, please specify:"
+      ],
+      "keys": [
+        "none",
+        "text30",
+        "text50",
+        "text100",
+        "text120",
+        "block30",
+        "block50",
+        "block100",
+        "block120",
+        "other:"
+      ]
+    },
+    "uni_course": {
+      "caption": "Have you participated or completed a programming/computer science course in higher education before this test? This does not inlcude the course you are currently taking.",
+      "type": "options",
+      "options": [
+        "Yes, a course which awarded 10 study points (ECTS)",
+        "Yes, a course which awarded 7.5 study points (ECTS)",
+        "Yes, a course which awarded 5 study points (ECTS)",
+        "Yes, but the course did not award any study points (ECTS)",
+        "No"
+      ],
+      "keys": [
+        "10ECTS",
+        "7.5ECTS",
+        "5ECTS",
+        "0ECTS",
+        "no"
+      ]
+    },
+    "instructions": {
+      "caption": "Programming tasks",
+      "type": "plain-text",
+      "text": "The next section contains programming tasks that are about the <b>Python</b> programming language.<br/><br/>If you think you know the answer, or have a clue what the answer might be, we want you to provide an answer. <br></br><h3><b>Important</b></h3>If you have no idea what the answer might be, select <b>\"I don't know\"</b>. Remember, this test is not designed to evaluate you specifically. It is meant to map the general programming knowledge of incoming students, so please don't try to make lucky guesses. Rather choose <b>\"I don't know.\"</b>"
+    },
+    "lists1": {
+      "caption": "What does this program print?",
+      "type": "options",
+      "options": [
+        "It prints:",
+        "I don't know"
+      ],
+      "keys": [
+        "integer:",
+        "error",
+        "unknown"
+      ],
+      "correct": "integer:20"
+    },
+    "lists2": {
+      "caption": "What does this program print?",
+      "type": "options",
+      "options": [
+        "It prints:",
+        "I don't know"
+      ],
+      "keys": [
+        "integer:",
+        "unknown"
+      ],
+      "correct": "integer:4"
+    },
+    "lists3": {
+      "caption": "What does this program print?",
+      "type": "options",
+      "options": [
+        "It prints:",
+        "I don't know"
+      ],
+      "keys": [
+        "integer:",
+        "unknown"
+      ],
+      "correct": "integer:80"
+    },
+    "lists4": {
+      "caption": "What does this program print?",
+      "type": "options",
+      "options": [
+        "It prints:",
+        "I don't know"
+      ],
+      "keys": [
+        "integer:",
+        "unknown"
+      ],
+      "correct": "integer:25"
+    },
+    "lists5a": {
+      "caption": "Which values does list <code>a</code> have after line 4?<br></br><small>Write each value with a comma between, like this: <code>1, 2, 3</code></small>",
+      "type": "options",
+      "options": [
+        "Values of list a:",
+        "I don't know"
+      ],
+      "keys": [
+        "list:",
+        "unknown"
+      ],
+      "correct": "list:10,20,30"
+    },
+    "lists5b": {
+      "caption": "Which values does list <code>b</code> have after line 4?<br></br><small>Write each value with a comma between, like this: <code>1, 2, 3</code></small>",
+      "type": "options",
+      "options": [
+        "Values of list b:",
+        "I don't know"
+      ],
+      "keys": [
+        "list:",
+        "unknown"
+      ],
+      "correct": "list:5,35,25"
+    },
+    "lists6a": {
+      "caption": "Which values does list <code>a</code> have after line 6?<br></br><small>Write each value with a comma between, like this: <code>1, 2, 3</code></small>",
+      "type": "options",
+      "options": [
+        "Values of list a:",
+        "I don't know"
+      ],
+      "keys": [
+        "list:",
+        "unknown"
+      ],
+      "correct": "list:10,20,35"
+    },
+    "lists6b": {
+      "caption": "Which values does list <code>b</code> have after line 6?<br></br><small>Write each value with a comma between, like this: <code>1, 2, 3</code></small>",
+      "type": "options",
+      "options": [
+        "Values of list b:",
+        "I don't know"
+      ],
+      "keys": [
+        "list:",
+        "unknown"
+      ],
+      "correct": "list:20,15,25"
+    },
+    "conditionals1": {
+      "caption": "What does this program print?",
+      "type": "options",
+      "options": [
+        "1",
+        "Nothing",
+        "I don't know"
+      ],
+      "keys": [
+        "1",
+        "nothing",
+        "-"
+      ],
+      "correct": "nothing"
+    },
+    "conditionals2": {
+      "caption": "What does this program print?",
+      "type": "options",
+      "options": [
+        "1",
+        "2",
+        "1 and 2",
+        "Nothing",
+        "I don't know"
+      ],
+      "keys": [
+        "1",
+        "2",
+        "1and2",
+        "nothing",
+        "-"
+      ],
+      "correct": "2"
+    },
+    "conditionals3": {
+      "caption": "What does this program print?",
+      "type": "options",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "1 and 2",
+        "1 and 3",
+        "2 and 3",
+        "1, 2 and 3",
+        "Nothing",
+        "I don't know"
+      ],
+      "keys": [
+        "1",
+        "2",
+        "3",
+        "1and2",
+        "1and3",
+        "2and3",
+        "1and2and3",
+        "nothing",
+        "-"
+      ],
+      "correct": "2"
+    },
+    "conditionals4": {
+      "caption": "What does this program print?",
+      "type": "options",
+      "options": [
+        "It prints:",
+        "I don't know"
+      ],
+      "keys": [
+        "integer:",
+        "error",
+        "unknown"
+      ],
+      "correct": "integer:2"
+    },
+    "conditionals5": {
+      "caption": "Which of the following alternatives for <code>MISSING_CODE1</code> and <code>MISSING_CODE2</code> will print <code>2</code> and <code>3</code>.<br></br><b>I.</b><br><code>MISSING_CODE1</code>: <code>x or z</code><br><code>MISSING_CODE2</code>: <code>y and not x</code><br><br><b>II.</b><br><code>MISSING_CODE1</code>: <code>not y</code><br><code>MISSING_CODE2</code>: <code>x or y</code><br><br><b>III.</b><br><code>MISSING_CODE1</code>: <code>x and y</code><br><code>MISSING_CODE2</code>: <code>y and z</code><br><br><b>IV.</b><br><code>MISSING_CODE1</code>: <code>x and not y</code><br><code>MISSING_CODE2</code>: <code>not z and y</code>",
+      "type": "options",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "I don't know"
+      ],
+      "keys": [
+        "i",
+        "ii",
+        "iii",
+        "iv",
+        "-"
+      ],
+      "correct": "iv"
+    },
+    "difficulty": {
+      "caption": "What did you think of the difficulty of this test?",
+      "type": "options",
+      "options": [
+        "Very easy",
+        "Easy",
+        "Neutral",
+        "Difficult",
+        "Very difficult"
+      ],
+      "keys": [
+        "-2",
+        "-1",
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "comments": {
+      "caption": "Do you have any comments about the test?",
+      "type": "optional_text"
+    }
+  },
+  "pages": [
+    {
+      "title": "Instructions",
+      "content": [
+        "instructions"
+      ]
+    },
+    {
+      "title": "Lists 1",
+      "content": [
+        "lists1"
+      ],
+      "code": "create_test/tasks/lists/lists1.py"
+    },
+    {
+      "title": "Lists 2",
+      "content": [
+        "lists2"
+      ],
+      "code": "create_test/tasks/lists/lists2.py"
+    },
+    {
+      "title": "Lists 3",
+      "content": [
+        "lists3"
+      ],
+      "code": "create_test/tasks/lists/lists3.py"
+    },
+    {
+      "title": "Lists 4",
+      "content": [
+        "lists4"
+      ],
+      "code": "create_test/tasks/lists/lists4.py"
+    },
+    {
+      "title": "Lists 5",
+      "content": [
+        "lists5a",
+        "lists5b"
+      ],
+      "code": "create_test/tasks/lists/lists5.py"
+    },
+    {
+      "title": "Lists 6",
+      "content": [
+        "lists6a",
+        "lists6b"
+      ],
+      "code": "create_test/tasks/lists/lists6.py"
+    },
+    {
+      "title": "Conditionals 1",
+      "content": [
+        "conditionals1"
+      ],
+      "code": "create_test/tasks/conditionals/conditionals1.py"
+    },
+    {
+      "title": "Conditionals 2",
+      "content": [
+        "conditionals2"
+      ],
+      "code": "create_test/tasks/conditionals/conditionals2.py"
+    },
+    {
+      "title": "Conditionals 3",
+      "content": [
+        "conditionals3"
+      ],
+      "code": "create_test/tasks/conditionals/conditionals3.py"
+    },
+    {
+      "title": "Conditionals 4",
+      "content": [
+        "conditionals4"
+      ],
+      "code": "create_test/tasks/conditionals/conditionals4.py"
+    },
+    {
+      "title": "Conditionals 5",
+      "content": [
+        "conditionals5"
+      ],
+      "code": "create_test/tasks/conditionals/conditionals5.py"
+    },
+    {
+      "title": "Final questions",
+      "content": [
+        "difficulty",
+        "comments"
+      ]
+    }
+  ]
+}

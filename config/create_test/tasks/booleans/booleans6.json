@@ -1,0 +1,23 @@
+{
+    "booleans3": {
+      "caption": "Assume that <code>a</code>, <code>b</code> and <code>c</code> are variables of type <code>int</code>. Consider the following three expressions.<br></br> I. &nbsp;&nbsp;<code>(a == b) and (a == c) and (b == c)</code><br></br> II. &nbsp;<code>(a == b) or (a == c) or (b == c)</code><br></br> III. <code>((a - b) * (a - c) * (b - c)) == 0</code><br></br><br></br> Which of the expressions above is (are) always true if at least two of <code>a</code>, <code>b</code> and <code>c</code> are equal?",
+      "type": "options",
+      "options": [
+        "I only",
+        "II only",
+        "III only",
+        "I and II",
+        "II and III",
+        "I don't know"
+      ],
+      "keys": [
+        "i",
+        "ii",
+        "iii",
+        "iandii",
+        "iiandiii",
+        "-"
+      ],
+      "correct": "iiandiii"
+    }
+}

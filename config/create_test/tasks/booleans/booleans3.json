@@ -1,0 +1,67 @@
+    {
+        "3booltext": {
+            "caption": "Instructions",
+            "type": "plain-text",
+            "text": "For each of the following expressions, choose which boolean value (<code>True</code>/<code>False</code>) it evaluates to:"
+        },
+        "bool3a": {
+            "caption": "<code>True or False</code>",
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "true"
+        },
+        "bool3b": {
+            "caption": "<code>True and False</code>",
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "false"
+        },
+        "bool3c": {
+            "caption": "<code>True == True</code>",
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "true"
+        },
+        "bool3d": {
+            "caption": "<code>not (True != True)</code>",
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "true"
+        }
+    }

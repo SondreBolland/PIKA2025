@@ -1,0 +1,112 @@
+    {
+        "2booltext": {
+            "caption": "Instructions",
+            "type": "plain-text",
+            "text": "For each of the following expressions, choose which boolean value (<code>True</code>/<code>False</code>) it evaluates to:"
+        },
+        "bool2a": {
+            "caption": "<code>100 != 100</code>",            
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "false"
+        },
+        "bool2b": {
+            "caption": "<code>(3 < 7) and (7 < 9)</code>",            
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "true"
+        },
+        "bool2c": {
+            "caption": "<code>(5 < 7) and (4 > 5 )</code>",            
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "false"
+        },
+        "bool2d": {
+            "caption": "<code>(3 < 7) or (7 < 9)</code>",
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "true"
+        },
+        "bool2e": {
+            "caption": "<code>(5 < 7) or (4 > 5)</code>",            
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "true"
+        },
+        "bool2f": {
+            "caption": "<code>not (100 > 100)</code>",
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "true"
+        },
+        "bool2g": {
+            "caption": "<code>not (100 != 100)</code>",
+            "type": "options",
+            "options": [
+                "False",
+                "True",
+                "I don't know"
+            ],
+            "keys": [
+                "false",
+                "true",
+                "-"
+            ],
+            "correct": "true"
+        }
+    }

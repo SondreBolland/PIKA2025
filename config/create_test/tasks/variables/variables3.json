@@ -1,0 +1,30 @@
+{
+    "variables3a": {
+        "caption": "What is the value of variable <strong>b</strong> after line 5 has run?",
+        "type": "options",
+        "options": [
+            "Its value is:",
+            "I don't know"
+        ],
+        "keys": [
+            "integer:",
+            "error",
+            "unknown"
+        ],
+        "correct": "integer:20"
+    },
+    "variables3b": {
+        "caption": "What is the value of variable <strong>b</strong> after line 5 has run?",
+        "type": "options",
+        "options": [
+            "Its value is:",
+            "I don't know"
+        ],
+        "keys": [
+            "integer:",
+            "error",
+            "unknown"
+        ],
+        "correct": "integer:20"
+    }
+}

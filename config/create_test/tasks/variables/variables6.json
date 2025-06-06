@@ -1,0 +1,44 @@
+{
+    "variables6a": {
+        "caption": "What is the value of variable <strong>a</strong> after line 7 has run?",
+        "type": "options",
+        "options": [
+            "Its value is:",
+            "I don't know"
+        ],
+        "keys": [
+            "integer:",
+            "error",
+            "unknown"
+        ],
+        "correct": "integer:30"
+    },
+    "variables6b": {
+        "caption": "What is the value of variable <strong>b</strong> after line 7 has run?",
+        "type": "options",
+        "options": [
+            "Its value is:",
+            "I don't know"
+        ],
+        "keys": [
+            "integer:",
+            "error",
+            "unknown"
+        ],
+        "correct": "integer:30"
+    },
+    "variables6c": {
+        "caption": "What is the value of variable <strong>c</strong> after line 7 has run?",
+        "type": "options",
+        "options": [
+            "Its value is:",
+            "I don't know"
+        ],
+        "keys": [
+            "integer:",
+            "error",
+            "unknown"
+        ],
+        "correct": "integer:30"
+    }
+}

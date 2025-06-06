@@ -1,0 +1,23 @@
+{
+    "loop3": {
+      "caption": "Which of the following statements best describes the execution of the while loop? Give the answer at the bottom of the page.<br></br><strong>I) </strong>When j is less than 10, print \"Book i\", e.g.,<br></br><code>Book 1</code><br></br><code>Book 2</code><br></br>...<br></br><code>Book 9</code><br></br><strong>II) </strong>When j is less than 10, print \"Book j\", e.g.,<br></br><code>Book 0</code><br></br><code>Book 1</code><br></br>...<br></br><code>Book 9</code><br></br><strong>III) </strong>j is always equal to 0, which is less than 10; so print \"Book 0\" an infinite number of times, e.g.,<br></br><code>Book 0</code><br></br><code>Book 0</code><br></br><code>...</code><br></br><strong>IV) </strong>j is always equal to 0, which is less than 10; so print \"Book i\" an infinite number of times, e.g.<br></br><code>Book 1</code><br></br><code>Book 2</code><br></br>...<br></br><strong>V) </strong>j is equal to 0, which is less than 10; so print<br></br><code>Book 1</code>",
+      "type": "options",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "I don't know"
+      ],
+      "keys": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "unknown"
+      ],
+      "correct": "IV"
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "4booltext": {
+        "caption": "Instructions",
+        "type": "plain-text",
+        "text": "For each of the following expressions, choose which boolean value (<code>True</code>/<code>False</code>) it evaluates to given the variable <b>n = 5</b>."
+    },
+    "bool4a": {
+        "caption": "<code>n < 10</code>",
+        "type": "options",
+        "options": [
+            "False",
+            "True",
+            "I don't know"
+        ],
+        "keys": [
+            "false",
+            "true",
+            "-"
+        ],
+        "correct": "true"
+    },
+    "bool4b": {
+        "caption": "<code>100 == n</code>",
+        "type": "options",
+        "options": [
+            "False",
+            "True",
+            "I don't know"
+        ],
+        "keys": [
+            "false",
+            "true",
+            "-"
+        ],
+        "correct": "false"
+    },
+    "bool4c": {
+        "caption": "<code>(n < 7) and (4 > n)</code>",
+        "type": "options",
+        "options": [
+            "False",
+            "True",
+            "I don't know"
+        ],
+        "keys": [
+            "false",
+            "true",
+            "-"
+        ],
+        "correct": "false"
+    },
+    "bool4d": {
+        "caption": "<code>n <= 5</code>",
+        "type": "options",
+        "options": [
+            "False",
+            "True",
+            "I don't know"
+        ],
+        "keys": [
+            "false",
+            "true",
+            "-"
+        ],
+        "correct": "true"
+    },
+    "bool4e": {
+        "caption": "<code>not (n < 10)</code>",
+        "type": "options",
+        "options": [
+            "False",
+            "True",
+            "I don't know"
+        ],
+        "keys": [
+            "false",
+            "true",
+            "-"
+        ],
+        "correct": "false"
+    }
+}

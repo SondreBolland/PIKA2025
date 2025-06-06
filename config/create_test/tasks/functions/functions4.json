@@ -1,0 +1,23 @@
+{
+    "functions4": {
+      "caption": "Consider the following method, <b>between</b>, which is intended to return true if <code>x</code> is between <code>lower</code> and <code>upper</code>, and false otherwise.<br></br>Which of the following can be used to replace <code># Missing code</code> so that <b>between</b> will work as intended?",
+      "type": "options",
+      "options": [
+        "return (x <= lower) and (x >= upper)",
+        "return (x <= lower) or (x >= upper)",
+        "return (lower <= x <= upper)",
+        "return (x >= lower) and (x <= upper)",
+        "return (x >= lower) or (x <= upper)",
+        "I don't know"
+      ],
+      "keys": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "unknown"
+      ],
+      "correct": "c"
+    }
+}
