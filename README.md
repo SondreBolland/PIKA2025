@@ -1,5 +1,5 @@
 # PIKA 2025 Test Service
-This is a lightweight web-based survey system built with Flask. It supports configurable surveys stored as JSON files, user session handling, answer storage, and result rendering including optional scoring.
+This is a lightweight web-based survey system built with Flask, created by [Filip Strömbäck](https://liu.se/en/employee/filst04). It supports configurable surveys stored as JSON files, user session handling, answer storage, and result rendering including optional scoring.
 
 ## Requirements
 
